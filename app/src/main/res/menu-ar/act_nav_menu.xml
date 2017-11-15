@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/done"
+        android:title=""
+        app:showAsAction="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/close"
+        android:icon="@drawable/close"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/record"
+        android:icon="@drawable/ic_record_voice"
+        android:title=""
+        app:showAsAction="always"/>
+
+
+
+</menu>

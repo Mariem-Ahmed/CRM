@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <searchable xmlns:android="http://schemas.android.com/apk/res/android"
+        android:hint="hint_search"
+        android:label="@string/app_name"
+        android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+        android:searchSuggestIntentAction="android.intent.action.VIEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:searchSuggestAuthority="com.example.MyCustomSuggestionProvider"
+        android:searchSuggestIntentData="content://com.example/datatable"
+    />

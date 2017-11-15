@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose type"
+        android:id="@+id/text_dialog"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/primary"
+        android:layout_below="@+id/text_dialog"
+        android:id="@+id/view"
+        />
+    <LinearLayout
+        android:layout_below="@+id/view"
+        android:id="@+id/liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:text="Call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/call"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Meeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meeting"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="SMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sms"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Viber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viber"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="WhatsApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatsapp"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+            <RadioButton
+                android:text="Opportunity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oppo"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/primary"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Cancel"
+        android:id="@+id/btn_dialog"
+        android:layout_below="@+id/liner"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary"
+        android:layout_gravity="bottom|end"/>
+
+
+</RelativeLayout>

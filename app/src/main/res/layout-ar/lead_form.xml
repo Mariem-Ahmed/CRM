@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dip">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الاسم التجارى*"
+            android:textColorHint="@color/primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+        />
+</android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رقم التليفون *"
+            android:textColorHint="@color/primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="phone"
+       />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="الايميل *"
+            android:textColorHint="@color/primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textWebEmailAddress"
+       />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="التعليق"
+            android:textColorHint="@color/primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--<EditText-->
+            <!--android:id="@+id/interest"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="مهتم ب"-->
+            <!--android:textColorHint="@color/primary"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:inputType="text"-->
+            <!--/>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <LinearLayout
+            android:id="@+id/liner6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/titleSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".33"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview4"
+                android:text="@string/Title"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".67"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/leadSourceSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".67"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview5"
+                android:text="@string/LeadSource"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".33"
+                />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="العنوان الحالى"
+            android:textColorHint="@color/primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/liner13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/leadNeedsSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".9"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview12"
+                android:text="@string/LeadsNeeds"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".1"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerassigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/assignetosSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".37"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textassigned"
+                android:text="@string/AssignedTo"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".63"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="1">
+            <Spinner
+                android:id="@+id/StatusSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".67"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview2"
+                android:text="@string/Status"
+                android:paddingRight="10dp"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".33"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/projectidSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".35"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview15"
+                android:text="المشروع"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".65"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="1">
+            <Spinner
+                android:id="@+id/roundidSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".33"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview18"
+                android:text="الفتره"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".67"
+
+                />
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/liner18"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:weightSum="1"-->
+            <!--&gt;-->
+            <!--<Spinner-->
+                <!--android:id="@+id/nationalitySpinner"-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:textColor="@color/primary"-->
+                <!--android:layout_weight=".35"-->
+                <!--android:background="@drawable/spinner_background"-->
+                <!--android:textAlignment="center"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/textview17"-->
+                <!--android:text="@string/Nationality"-->
+                <!--android:textColor="@color/primary"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_weight=".65"-->
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+        
+</LinearLayout>
+
+    </ScrollView>

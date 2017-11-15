@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/s1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="الموضوع "
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/primary"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:id="@+id/liner17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/relatedLeadSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".5"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview15"
+                android:text="@string/RelatedLead"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/activityTypeSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".37"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview5"
+                android:text="@string/ActivityType"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".63"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/statusactSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".37"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview4"
+                android:text="@string/StatusName"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".63"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"        >
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/textstartdate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_weight=".55"
+                    android:background="@drawable/border_for_textview"
+                    android:drawableRight="@drawable/calender"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview7"
+                    android:text="@string/StartDate"
+                    android:textColor="@color/primary"
+                    android:textSize="16dp"
+                    android:layout_weight=".45"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textstarttime"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight=".55"
+                android:background="@drawable/border_for_textview"
+                android:drawableRight="@drawable/calender"
+                android:editable="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/textview6"
+                android:text="@string/StartTime"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".45"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/textdurationtime"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight=".55"
+                android:background="@drawable/border_for_textview"
+                android:drawableRight="@drawable/calender"
+                android:editable="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview9"
+                android:text="@string/DurationTime"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".45"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerleadstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/leadstatusSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".55"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewleadstatus"
+                android:text="@string/LeadStatus"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".45"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerassigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            >
+            <Spinner
+                android:id="@+id/assignetosSpinner"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textColor="@color/primary"
+                android:layout_weight=".35"
+                android:background="@drawable/spinner_background"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textassigned"
+                android:text="@string/AssignedTo"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:layout_weight=".65"
+
+                />
+
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الوصف "
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/primary"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"
+                />
+            <!--android:lines="8"-->
+            <!--android:minLines="6"-->
+            <!--android:maxLines="10"-->
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>
